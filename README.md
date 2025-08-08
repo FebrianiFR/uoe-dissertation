@@ -1,9 +1,10 @@
 **Optimizing for Relevance and Diversity in RAG**
-This project proposes a novel document utility function for retrieval in reasoning-intensive Retrieval-Augmented Generation (RAG) pipelines. The goal is to optimize both the relevance and diversity of retrieved documents without requiring a specialized retrieval model.
 
+This project proposes a novel document utility function for retrieval in reasoning-intensive Retrieval-Augmented Generation (RAG) pipelines. The goal is to optimize both the relevance and diversity of retrieved documents without requiring a specialized retrieval model.
+------------------------------
 The Challenge
 Reasoning-intensive queries, like those found in the BRIGHT Benchmark, often require synthesizing information from multiple documents. Standard retrieval methods can struggle to provide all the necessary context in a single pass. To address this, we use a Large Language Model (LLM) to rewrite and expand the initial query, ensuring a more comprehensive set of documents can be retrieved.
-
+----------------------------
 Key Contributions
 This project investigates three core questions:
 
