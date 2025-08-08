@@ -1,4 +1,4 @@
-Optimizing for Relevance and Diversity in RAG
+**Optimizing for Relevance and Diversity in RAG**
 This project proposes a novel document utility function for retrieval in reasoning-intensive Retrieval-Augmented Generation (RAG) pipelines. The goal is to optimize both the relevance and diversity of retrieved documents without requiring a specialized retrieval model.
 
 The Challenge
