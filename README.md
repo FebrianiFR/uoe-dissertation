@@ -1,11 +1,15 @@
 **Optimizing for Relevance and Diversity in RAG**
 
 This project proposes a novel document utility function for retrieval in reasoning-intensive Retrieval-Augmented Generation (RAG) pipelines. The goal is to optimize both the relevance and diversity of retrieved documents without requiring a specialized retrieval model.
+
 ------------------------------
-The Challenge
+
+**The Challenge**
 Reasoning-intensive queries, like those found in the BRIGHT Benchmark, often require synthesizing information from multiple documents. Standard retrieval methods can struggle to provide all the necessary context in a single pass. To address this, we use a Large Language Model (LLM) to rewrite and expand the initial query, ensuring a more comprehensive set of documents can be retrieved.
+
 ----------------------------
-Key Contributions
+
+**Key Contributions**
 This project investigates three core questions:
 
 Prompt Engineering: Does a domain-adapted prompt, which explicitly defines the LLM's role and emphasizes nuance, outperform a general-purpose prompt template for query expansion?
@@ -14,7 +18,9 @@ Query Combination: When combining results from the original and expanded queries
 
 Utility Function: How does the proposed document utility function, adapted from fundamental Information Retrieval theory, optimize for both relevance and diversity?
 
-Methodology
+----------------------------
+
+**Methodology**
 We test our approach using both lexical models (BM25) and dense models (SBERT, OpenAI, Google) to retrieve documents. The reranking of documents is performed using the workflow that I proposed, reducing the need to train a separate retrieval model.
 
 A detailed analysis of the results will be available in an upcoming Medium article.
@@ -51,5 +57,9 @@ Place the generated embeddings in the correct folder structure as follows:
 └── embeddings/
     ├── bright_benchmark_embeddings.pt
     └── ...
+
+
+------------------------
+
 Contact
 If you encounter any issues or have questions, feel free to reach out to me at febriani.fitria@gmail.com.
