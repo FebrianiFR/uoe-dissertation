@@ -51,12 +51,17 @@ Run the BRIGHT benchmark to generate the document embeddings.
 
 Place the generated embeddings in the correct folder structure as follows:
 
-/your-repository-name
-├── config.json
-├── your_code_files...
-└── embeddings/
-    ├── bright_benchmark_embeddings.pt
-    └── ...
+
+```
+📦 embeddings
+├─ openai
+│  ├─ doc_emb
+│  └─ doc_ids
+├─ google
+└─ sbert
+```
+
+
 
 
 ------------------------
